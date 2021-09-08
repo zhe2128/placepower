@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: "jdbc:h2:mem:place_power"
+    driverClassName: org.h2.Driver
+    username: placepower
+    password: placepower
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+
+server:
+  error:
+    include-stacktrace: never
